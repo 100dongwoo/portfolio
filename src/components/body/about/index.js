@@ -1,8 +1,6 @@
 import React from 'react';
-import SocialContact from '../../common/social-contact';
 import {
     Container,
-    Image,
     InformationBox,
     Name,
     RightContainer,
