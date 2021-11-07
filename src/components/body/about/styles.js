@@ -12,6 +12,12 @@ export const TopContainer = styled.div`
         align-items: center;
     }
 `;
+export const ViewCount = styled.p`
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    color: purple;
+`;
 export const RightContainer = styled.div`
     width: 300px;
     height: 300px;

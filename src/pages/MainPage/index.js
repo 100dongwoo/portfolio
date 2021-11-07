@@ -26,7 +26,7 @@ function MainPage(props) {
         !isLoading && (
             <Container>
                 <Header />
-                <Body />
+                <Body viewCount={viewCount} />
                 <Footer />
             </Container>
         )
