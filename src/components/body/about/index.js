@@ -31,7 +31,7 @@ function About() {
                     />
                 </RightContainer>
             </TopContainer>
-            <SocialContact />
+            {/*<SocialContact />*/}
         </Container>
     );
 }

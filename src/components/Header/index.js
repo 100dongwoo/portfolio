@@ -20,7 +20,7 @@ function Header() {
     };
     return (
         <Container>
-            <Title onClick={handleLogoClick}>백동우의 포트폴리오</Title>
+            <Title onClick={handleLogoClick}>BDW Portfolio</Title>
             <Navbar>
                 <WebNav>
                     <Web />

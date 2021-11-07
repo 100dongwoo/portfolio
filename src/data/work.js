@@ -1,20 +1,13 @@
 export const WorkData = [
-  {
-    company: "Company 1",
-    designation: "Software Engineer",
-    dateJoining: "02-02-2000",
-    dateEnd: "Present",
-    companyLogo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png",
-    work: "Worken on Unit testing and creating the largest database efficiently. With over 100 people under me, made it work really well.",
-  },
-  {
-    company: "Company 2",
-    designation: "Software Engineer",
-    dateJoining: "02-02-2000",
-    dateEnd: "Present",
-    companyLogo:
-      "https://iconape.com/wp-content/png_logo_vector/facebook-f-logo-2019.png",
-    work: "Worken on Unit testing and creating the largest database efficiently. With over 100 people under me, made it work really well.",
-  },
+    {
+        type: '외주',
+        link: 'https://babygo.kr/',
+        company: '애기야 가자',
+        designation: 'Front-end',
+        date: '2020-11',
+        dateEnd: '2020-12',
+        Image: require('../assets/image/babygo.png').default,
+        work:
+            'figma디자인을 참고하여 React로 UI를 구현하고 백엔드 개발자의 API를 연동하여 프론트 개발을 하였으며, aws ec2에 배포 반영 작업을 진행한 외주 프로젝트입니다.',
+    },
 ];

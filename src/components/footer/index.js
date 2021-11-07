@@ -1,8 +1,8 @@
-import React from "react";
-import { Container } from "./styless";
+import React from 'react';
+import { Container } from './styless';
 
 function Footer() {
-  return <Container>Made with 🔥 by Overreacted</Container>;
+    return <Container>© 2021. Dong Woo Baek. All rights reserved.</Container>;
 }
 
 export default Footer;

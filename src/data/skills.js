@@ -1,36 +1,32 @@
 export const SkillsData = [
-  {
-    type: "Frontend",
-    list: [
-      {
-        name: "ReactJS",
-        icon: <i class="devicon-react-original colored"></i>,
-      },
-      {
-        name: "NextJS",
-        icon: <i class="devicon-nextjs-original colored"></i>,
-      },
-      {
-        name: "Javascript",
-        icon: <i class="devicon-javascript-plain colored"></i>,
-      },
-      {
-        name: "Typescript",
-        icon: <i class="devicon-typescript-plain colored"></i>,
-      },
-    ],
-  },
-  {
-    type: "Backend",
-    list: [
-      {
-        name: "C++",
-        icon: <i class="devicon-cplusplus-plain colored"></i>,
-      },
-      {
-        name: "NodeJS",
-        icon: <i class="devicon-nodejs-plain colored"></i>,
-      },
-    ],
-  },
+    {
+        type: '주요 기술',
+        list: [
+            {
+                name: 'ReactJS',
+                icon: <i className="devicon-react-original colored" />,
+            },
+            {
+                name: 'React-Native',
+                icon: <i className="devicon-react-original colored" />,
+            },
+        ],
+    },
+    {
+        type: '사용해본 기술',
+        list: [
+            {
+                name: 'Firebase',
+                icon: <i className="devicon-firebase-plain colored" />,
+            },
+            {
+                name: 'NodeJS',
+                icon: <i className="devicon-nodejs-plain colored" />,
+            },
+            {
+                name: 'Express',
+                icon: <i className="devicon-express-original colored" />,
+            },
+        ],
+    },
 ];
