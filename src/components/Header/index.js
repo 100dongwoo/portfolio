@@ -21,6 +21,7 @@ function Header() {
     return (
         <Container>
             <Title onClick={handleLogoClick}>BDW Portfolio</Title>
+
             <Navbar>
                 <WebNav>
                     <Web />

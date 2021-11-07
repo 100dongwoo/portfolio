@@ -55,6 +55,7 @@ export const ProjectStack = styled.label`
     border-radius: 4px;
     margin-right: 6px;
     margin-bottom: 4px;
+    color: ${(props) => props.theme.colors.projectStack};
 `;
 export const ProjectImages = styled.img`
     max-width: 400px;

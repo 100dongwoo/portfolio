@@ -16,7 +16,7 @@ export const ViewCount = styled.p`
     margin-bottom: 0;
     font-weight: bold;
     font-size: 1rem;
-    color: purple;
+    color: ${(props) => props.theme.colors.viewCount};
 `;
 export const RightContainer = styled.div`
     width: 300px;
@@ -38,7 +38,8 @@ export const InformationBox = styled.div`
 `;
 export const Name = styled.span`
     font-size: 32px;
-    color: blue;
+    //color: blue;
+    color: ${(props) => props.theme.colors.name};
     @media only screen and (max-width: 720px) {
         font-size: 26px;
     }

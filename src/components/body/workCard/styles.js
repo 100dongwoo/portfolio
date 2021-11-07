@@ -40,3 +40,6 @@ export const WorkDesc = styled.div`
     text-overflow: ellipsis;
     max-width: 80%;
 `;
+export const Link = styled.a`
+    color: ${(props) => props.theme.colors.link};
+`;

@@ -1,5 +1,12 @@
 import React from 'react';
-import { Container, Image, InformationBox, Type, WorkDesc } from './styles';
+import {
+    Container,
+    Image,
+    InformationBox,
+    Type,
+    WorkDesc,
+    Link,
+} from './styles';
 function WorkCard({ item }) {
     return (
         <Container>
@@ -23,14 +30,14 @@ function WorkCard({ item }) {
                     <p>{item.work}</p>
                 </WorkDesc>
                 {item.link && (
-                    <a
+                    <Link
                         style={{ textDecoration: 'none' }}
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         링크
-                    </a>
+                    </Link>
                 )}
             </InformationBox>
         </Container>

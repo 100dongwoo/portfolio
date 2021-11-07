@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import Header from '../../components/Header';
 import Body from '../../components/body';
 import Footer from '../../components/footer';
+import DarkModeToggle from 'react-dark-mode-toggle';
 import './css.css';
-function MainPage(props) {
+function MainPage({ setIsLightThemeMode, isLightThemeMode }) {
     const [viewCount, setViewCount] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
@@ -24,11 +25,20 @@ function MainPage(props) {
 
     return (
         !isLoading && (
-            <Container>
-                <Header />
-                <Body viewCount={viewCount} />
-                <Footer />
-            </Container>
+            <>
+                <TopContainer>
+                    <DarkModeToggle
+                        onChange={setIsLightThemeMode}
+                        size={80}
+                        checked={isLightThemeMode}
+                    />
+                </TopContainer>
+                <Container>
+                    <Header />
+                    <Body viewCount={viewCount} />
+                    <Footer />
+                </Container>
+            </>
         )
     );
 }
@@ -44,5 +54,11 @@ export const Container = styled.div`
     @media only screen and (max-width: 512px) {
         width: 100%;
     }
+`;
+export const TopContainer = styled.div`
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 1rem;
 `;
 export default MainPage;
